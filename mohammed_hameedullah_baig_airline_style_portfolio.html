@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071b36">
+<meta name="description" content="Mohammed Hameedullah Baig — aspiring Product Manager with software engineering and airline consulting experience.">
+<title>Mohammed Hameedullah Baig | Product & Aviation Technology</title>
+<style>
+:root{
+  --navy:#071b36;--navy2:#0b2d55;--blue:#1769aa;--sky:#53b7e8;--gold:#f2c66d;
+  --ink:#10233d;--muted:#617084;--paper:#f4f7fb;--white:#fff;--line:#dce5ef;
+  --radius:22px;--max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topline{background:#041226;color:#dce8f5;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:9px 0}
+.topline .container{display:flex;justify-content:space-between;gap:12px}
+.header{position:sticky;top:0;z-index:20;background:rgba(7,27,54,.96);backdrop-filter:blur(14px);color:white;border-bottom:1px solid rgba(255,255,255,.12)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700;letter-spacing:.02em}
+.logo-mark{width:36px;height:36px;border:1px solid rgba(242,198,109,.8);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:18px}
+.navlinks{display:flex;align-items:center;gap:25px;font-size:12px;color:#d8e2ee}
+.navlinks a:hover{color:var(--gold)}
+.navlinks .contact-link{border:1px solid rgba(242,198,109,.7);padding:10px 15px;border-radius:3px;color:var(--gold)}
+.hero{position:relative;color:white;background:linear-gradient(115deg,rgba(4,18,38,.98) 0%,rgba(7,39,74,.95) 54%,rgba(10,72,112,.82) 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,rgba(83,183,232,.22),transparent 35%),linear-gradient(135deg,transparent 60%,rgba(242,198,109,.10) 60.1%,transparent 60.5%);pointer-events:none}
+.hero:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-110px;top:-160px;box-shadow:0 0 0 45px rgba(255,255,255,.025),0 0 0 90px rgba(255,255,255,.02)}
+.hero-inner{position:relative;z-index:1;min-height:540px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px;padding-top:70px;padding-bottom:76px}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:22px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.055em;margin:0 0 22px;font-weight:700;max-width:700px}
+.hero-copy{font-size:17px;line-height:1.75;color:#d3dfec;max-width:620px;margin:0 0 30px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 19px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.04em;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:#091d37}
+.btn.outline{border:1px solid rgba(255,255,255,.42);color:white}
+.hero-aside{position:relative;z-index:1;padding:28px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.045);backdrop-filter:blur(8px)}
+.aside-label{color:var(--gold);font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px;font-weight:700}
+.aside-row{display:flex;gap:14px;padding:17px 0;border-top:1px solid rgba(255,255,255,.14)}
+.aside-num{font-size:12px;color:var(--gold);font-weight:700;padding-top:2px}
+.aside-row strong{display:block;font-size:14px;margin-bottom:5px}
+.aside-row span{font-size:12px;color:#bdcddd;line-height:1.55}
+.hero-foot{position:relative;z-index:1;background:rgba(2,13,28,.36);border-top:1px solid rgba(255,255,255,.12)}
+.hero-foot .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;color:#c4d4e5;font-size:11px;letter-spacing:.05em}
+.hero-foot b{color:white}
+.section{padding:80px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:30px}
+.kicker{font-size:10px;font-weight:700;color:var(--blue);letter-spacing:.18em;text-transform:uppercase;margin-bottom:13px}
+h2{font-size:clamp(30px,4.2vw,48px);letter-spacing:-.045em;line-height:1.1;margin:0;color:var(--navy)}
+.intro{max-width:475px;font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+.card h3{font-size:21px;letter-spacing:-.025em;margin:0 0 12px;color:var(--navy)}
+.card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{padding:8px 11px;background:#edf4fa;color:#244b70;font-size:11px;border:1px solid #dbe8f4;border-radius:2px}
+.statline{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.stat{padding-top:15px;border-top:2px solid var(--gold)}
+.stat strong{display:block;font-size:22px;color:var(--navy);letter-spacing:-.04em;margin-bottom:5px}
+.stat span{font-size:10px;line-height:1.5;color:var(--muted)}
+.case{background:var(--navy);color:white;padding:45px;border-radius:var(--radius);position:relative;overflow:hidden}
+.case:after{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(255,255,255,.09);border-radius:50%;right:-80px;top:-120px;box-shadow:0 0 0 30px rgba(255,255,255,.025),0 0 0 60px rgba(255,255,255,.02)}
+.case-top{position:relative;z-index:1;display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:30px}
+.case h3{font-size:clamp(27px,4vw,42px);letter-spacing:-.04em;line-height:1.12;margin:0 0 14px;max-width:700px}
+.case .case-desc{color:#c2d2e3;line-height:1.8;font-size:14px;max-width:720px;margin:0}
+.case-badge{white-space:nowrap;border:1px solid rgba(242,198,109,.65);color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.12em;padding:10px 12px}
+.case-steps{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.case-step{padding:22px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12)}
+.case-step .number{font-size:11px;color:var(--gold);margin-bottom:17px;letter-spacing:.12em}
+.case-step h4{font-size:16px;margin:0 0 9px}
+.case-step p{font-size:12px;line-height:1.75;color:#c2d2e3;margin:0}
+.disclaimer{font-size:11px;line-height:1.6;color:var(--muted);margin:14px 4px 0}
+.work-layout{display:grid;grid-template-columns:250px 1fr;gap:22px}
+.work-intro{background:#e7eff7;padding:27px;border-radius:var(--radius)}
+.work-intro h3{font-size:21px;line-height:1.2;letter-spacing:-.03em;color:var(--navy);margin:0 0 12px}
+.work-intro p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.timeline{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:8px 30px}
+.job{display:grid;grid-template-columns:160px 1fr;gap:25px;padding:25px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job-date{font-size:11px;line-height:1.7;color:var(--muted)}
+.job h3{font-size:17px;color:var(--navy);margin:0 0 6px}
+.company{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--blue);margin-bottom:9px}
+.job p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.edu{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;gap:18px}
+.edu-mark{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;background:var(--navy);color:var(--gold);border-radius:50%;font-size:17px}
+.edu .year{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:9px}
+.edu h3{font-size:16px;line-height:1.4;margin:0 0 7px;color:var(--navy)}
+.edu p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
+.contact{background:linear-gradient(115deg,#06172e,#0a4771);color:white;border-radius:var(--radius);padding:clamp(32px,6vw,65px);display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}
+.contact h2{color:white;max-width:650px;margin-bottom:14px}
+.contact p{color:#c7d7e7;font-size:13px;line-height:1.8;max-width:640px;margin:0}
+.contact-actions{display:flex;flex-direction:column;gap:11px;min-width:190px}
+.contact-actions .btn{width:100%}
+.contact-actions .outline{border-color:rgba(255,255,255,.35)}
+footer{padding:25px 0 35px;color:#6b7b8f;font-size:10px}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px}
+.footer-links a:hover{color:var(--blue)}
+@media(max-width:850px){
+ .hero-inner{grid-template-columns:1fr;gap:30px;padding-top:60px;padding-bottom:55px}
+ .hero-aside{max-width:620px}
+ .section-head{display:block}.intro{margin-top:16px}
+ .work-layout{grid-template-columns:1fr}.work-intro{padding:22px}
+ .contact{grid-template-columns:1fr}.contact-actions{flex-direction:row;flex-wrap:wrap}.contact-actions .btn{width:auto}
+}
+@media(max-width:620px){
+ .container{width:calc(100% - 28px)}
+ .topline .container span:last-child{display:none}
+ nav{min-height:62px}.navlinks{gap:12px}.navlinks a:not(.contact-link){display:none}
+ .logo{font-size:12px}.logo-mark{width:31px;height:31px}
+ .hero-inner{padding-top:50px}.hero-copy{font-size:15px}
+ .section{padding:58px 0}
+ .about-grid,.case-steps,.edu-grid{grid-template-columns:1fr}
+ .card{padding:24px}.case{padding:25px}.case-top{display:block}.case-badge{display:inline-block;margin-top:20px}
+ .timeline{padding:5px 20px}.job{grid-template-columns:1fr;gap:7px}
+ .statline{gap:8px}.stat strong{font-size:18px}
+ .edu{padding:21px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="container"><span>PERSONAL PORTFOLIO · PRODUCT & TECHNOLOGY</span><span>HYDERABAD, TELANGANA, INDIA</span></div></div>
+<header class="header">
+  <nav class="container" aria-label="Main navigation">
+    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">✦</span><span>MOHAMMED HAMEEDULLAH BAIG</span></a>
+    <div class="navlinks">
+      <a href="#profile">Profile</a><a href="#case-study">Case Study</a><a href="#experience">Experience</a><a href="#education">Education</a>
+      <a class="contact-link" href="#contact">Contact ↗</a>
+    </div>
+  </nav>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <div class="eyebrow">Product thinking · Engineering roots</div>
+      <h1>Designing better journeys through <span style="color:var(--gold)">user-first thinking.</span></h1>
+      <p class="hero-copy">I’m Mohammed Hameedullah Baig, an aspiring Product Manager with a software engineering background and experience consulting for a leading airline. I’m passionate about turning meaningful user problems into clear product opportunities.</p>
+      <div class="buttons">
+        <a class="btn gold" href="#case-study">Explore Product Case Study <span aria-hidden="true">↗</span></a>
+        <a class="btn outline" href="https://www.linkedin.com/in/mohammedhameedullahbaig" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+    <aside class="hero-aside">
+      <div class="aside-label">My product focus</div>
+      <div class="aside-row"><div class="aside-num">01</div><div><strong>Discover</strong><span>Understand user behavior through research, interviews, and surveys.</span></div></div>
+      <div class="aside-row"><div class="aside-num">02</div><div><strong>Define</strong><span>Frame the highest-impact problem and turn ambiguity into direction.</span></div></div>
+      <div class="aside-row"><div class="aside-num">03</div><div><strong>Deliver & learn</strong><span>Shape experiments, metrics, risks, and guardrails around outcomes.</span></div></div>
+    </aside>
+  </div>
+  <div class="hero-foot"><div class="container"><span><b>8+ years</b> in software engineering and technology delivery</span><span><b>Product discovery</b> · User research · Strategy · Metrics</span><span><b>Languages</b> English & Urdu</span></div></div>
+</section>
+
+<section class="section container" id="profile">
+  <div class="section-head"><div><div class="kicker">01 / Profile</div><h2>Technology experience.<br>Product ambition.</h2></div><p class="intro">I enjoy understanding user behavior, prioritizing high-impact problems, and turning ambiguous challenges into practical product opportunities. My engineering experience helps me connect customer needs with technical delivery.</p></div>
+  <div class="about-grid">
+    <article class="card">
+      <h3>How I approach product problems</h3>
+      <p>My product discovery case study explores why job seekers lose trust after applying for roles. Using user interviews and survey research, I identified low visibility into application status as a source of uncertainty, repeated effort, and switching to other job portals.</p>
+      <div class="skill-tags"><span class="tag">User research</span><span class="tag">Problem framing</span><span class="tag">Prioritization</span><span class="tag">Product strategy</span></div>
+    </article>
+    <article class="card">
+      <h3>A technical foundation</h3>
+      <p>Across software engineering and airline consulting, I’ve worked on Angular applications, API integrations, unit testing, localization, UX coordination, analytics, and Scrum delivery. I bring a practical understanding of how product ideas move toward implementation.</p>
+      <div class="statline"><div class="stat"><strong>8+ yrs</strong><span>Technology experience<br>from profile summary</span></div><div class="stat"><strong>Scrum</strong><span>Agile team practices<br>and ceremonies</span></div><div class="stat"><strong>UX + Tech</strong><span>Cross-functional<br>collaboration</span></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="section container" id="case-study">
+  <div class="section-head"><div><div class="kicker">02 / Featured case study</div><h2>Bring clarity to the<br>job application journey.</h2></div><p class="intro">A product discovery concept focused on helping job seekers understand what happens after they apply — and improving trust through clearer communication.</p></div>
+  <div class="case">
+    <div class="case-top"><div><h3>From application uncertainty to a more transparent experience.</h3><p class="case-desc">Research highlighted a key pain point: applicants often receive little or no visibility into application status. The proposed direction focuses on clearer progress signals and timely updates, supported by measurable pilot experiments.</p></div><span class="case-badge">Product discovery concept</span></div>
+    <div class="case-steps">
+      <article class="case-step"><div class="number">STEP 01</div><h4>Research the problem</h4><p>Explore user interviews and survey insights to understand applicant uncertainty, repeated effort, and loss of trust.</p></article>
+      <article class="case-step"><div class="number">STEP 02</div><h4>Shape the experience</h4><p>Propose application timelines, outcome updates, clearer job status, recruiter reminders, and ATS integrations.</p></article>
+      <article class="case-step"><div class="number">STEP 03</div><h4>Define success</h4><p>Establish success metrics, pilot experiments, risks, and guardrails to evaluate whether the solution helps users.</p></article>
+    </div>
+  </div>
+  <p class="disclaimer">This section summarizes the case study described in the supplied profile. It is a concept overview; validated outcomes, quantitative research findings, and a live prototype were not included in the source PDF.</p>
+</section>
+
+<section class="section container" id="experience">
+  <div class="section-head"><div><div class="kicker">03 / Professional journey</div><h2>Experience built<br>through delivery.</h2></div><p class="intro">A career across software development and enterprise consulting, with hands-on technical work and collaboration with QA, UX, backend, and Scrum teams.</p></div>
+  <div class="work-layout">
+    <aside class="work-intro"><div class="kicker">Career snapshot</div><h3>Engineering, collaboration, customer insight.</h3><p>Experience includes software upgrades, test coverage, multilingual interfaces, API integrations, analytics, and internal product functionality.</p></aside>
+    <div class="timeline">
+      <article class="job"><div class="job-date">NOV 2023 — JUL 2026<br>2 years 9 months</div><div><h3>Senior Software Engineer</h3><div class="company">VIRTUSA · LEADING AIRLINE CONSULTING</div><p>Consultant for a leading airline, working in an enterprise technology delivery environment.</p></div></article>
+      <article class="job"><div class="job-date">APR 2023 — OCT 2023<br>7 months</div><div><h3>Consultant</h3><div class="company">VIRTUSA · HYDERABAD, INDIA</div><p>Consultant for a leading airline, contributing to customer-focused software delivery.</p></div></article>
+      <article class="job"><div class="job-date">OCT 2020 — APR 2023<br>2 years 7 months</div><div><h3>Associate Consultant</h3><div class="company">VIRTUSA · HYDERABAD, INDIA</div><p>Upgraded an Angular project from version 5 to 13, improved code coverage with unit tests, fixed QA-reported bugs, implemented route navigation and multilingual support, coordinated with UX on conditional banners, participated in Scrum ceremonies, and implemented Adobe Analytics for customer insights.</p></div></article>
+      <article class="job"><div class="job-date">OCT 2017 — OCT 2020<br>3 years 1 month</div><div><h3>Software Engineer</h3><div class="company">ADAPPT / ADAPPT CLOUD APPLICATION PVT LTD.</div><p>Developed dynamic web features using Angular and ngx-formly, integrated backend APIs and services, implemented token-based authentication and role permissions, and contributed to an internal product for employee task-hour tracking.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="education">
+  <div class="section-head"><div><div class="kicker">04 / Education & credentials</div><h2>Strong foundations.<br>Continuous learning.</h2></div><p class="intro">Formal education in computer science and engineering, alongside a listed certification in cyber security governance, risk, and compliance.</p></div>
+  <div class="edu-grid">
+    <article class="edu"><div class="edu-mark" aria-hidden="true">✦</div><div><div class="year">2014 — 2017</div><h3>Bachelor of Technology (BTech)</h3><p>Computer Science<br>Jawaharlal Nehru Technological University</p></div></article>
+    <article class="edu"><div class="edu-mark" aria-hidden="true">⌘</div><div><div class="year">2011 — 2014</div><h3>Diploma, Computer Engineering</h3><p>State Board of Technical Education and Training</p></div></article>
+    <article class="edu"><div class="edu-mark" aria-hidden="true">◇</div><div><div class="year">Certification listed in profile</div><h3>Cyber Security Governance, Risk & Compliance (GRC) Mastery</h3><p>Cyber security governance, risk, and compliance.</p></div></article>
+    <article class="edu"><div class="edu-mark" aria-hidden="true">文</div><div><div class="year">Languages</div><h3>English & Urdu</h3><p>Languages listed in profile.</p></div></article>
+  </div>
+</section>
+
+<section class="section container" id="contact">
+  <div class="contact"><div><div class="kicker" style="color:var(--gold)">05 / Connect</div><h2>Let’s make complex journeys simpler.</h2><p>I’m developing my capabilities in product discovery, user research, prioritization, product strategy, and metrics-driven decision-making. If you’re building thoughtful products or looking for a technology-minded product professional, let’s connect.</p></div>
+    <div class="contact-actions"><a class="btn gold" href="mailto:mdhameedullahbaig@gmail.com">Email me ↗</a><a class="btn outline" href="https://www.linkedin.com/in/mohammedhameedullahbaig" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a><a class="btn outline" href="tel:+918897885512">Call 88978 85512</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year">2026</span> Mohammed Hameedullah Baig · Personal portfolio</span><div class="footer-links"><a href="#top">Back to top ↑</a><a href="mailto:mdhameedullahbaig@gmail.com">Email</a></div></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
